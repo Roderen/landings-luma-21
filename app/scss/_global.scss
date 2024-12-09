@@ -1,0 +1,474 @@
+// Widget start ====================================
+#chat-24-desktop #chat-24-inner-container {
+  background: none !important;
+}
+
+#chat-24-desktop #chat-24-close-icons {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+#chat-24-desktop #chat-24-footer {
+  display: none !important;
+}
+
+#chat-24-desktop #chat-24-close-icons::before {
+  display: none !important;
+}
+
+#chat-24-desktop #chat-24-close-icons::after {
+  display: none !important;
+}
+
+#chat-24-desktop #chat-24-content {
+  position: relative;
+}
+
+#chat-24-desktop #chat-24-widget-container .chat-24-icon {
+  margin: 0 !important;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24icon-call,
+#chat-24-desktop #chat-24-inner-container .chat-24-icon-wa {
+  width: 56px !important;
+  height: 56px !important;
+  display: block !important;
+  text-decoration: none !important;
+  border-radius: 100% !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .45) !important;
+  transition-duration: .3s !important;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24icon-call {
+  background: none !important;
+  background-color: rgb(4, 174, 228) !important;
+  position: absolute !important;
+  top: -96px;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24icon-call:hover {
+  background-color: rgb(8, 168, 74) !important;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24icon-call::before {
+  content: url("data:image/svg+xml,%3Csvg viewBox='0 0 516 516' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3Cg%3E%3Cpath d='M503.05 409.127 L446.289 371.283 395.83 337.65 C386.092 331.171 373.005 333.295 365.816 342.523 L334.593 382.662 C327.886 391.372 315.821 393.875 306.203 388.55 285.017 376.765 259.964 365.669 204.686 310.32 149.408 254.971 138.241 229.989 126.456 208.803 121.131 199.185 123.634 187.12 132.344 180.414 L172.483 149.191 C181.71 142.003 183.835 128.916 177.356 119.177 L144.756 70.272 105.879 11.956 C99.262 2.03 86.016 -0.95 75.786 5.185 L30.95 32.083 C18.833 39.222 9.926 50.75 6.074 64.277 -6.187 108.98 -8.659 207.593 149.381 365.633 307.421 523.673 406.025 521.193 450.728 508.931 464.255 505.08 475.783 496.173 482.922 484.055 L509.82 439.22 C515.956 428.989 512.976 415.744 503.05 409.127 Z' fill='%23ffffff' fill-opacity='1' stroke='none'%3E%3C/path%3E%3Cpath d='M292.309 81.447 C375.151 81.539 442.286 148.673 442.378 231.516 442.378 236.391 446.33 240.344 451.206 240.344 456.081 240.344 460.034 236.392 460.034 231.516 459.932 138.927 384.899 63.894 292.31 63.792 287.435 63.792 283.482 67.744 283.482 72.62 283.481 77.494 287.433 81.447 292.309 81.447 Z' fill='%23ffffff' fill-opacity='1' stroke='none'%3E%3C/path%3E%3Cpath d='M292.309 134.412 C345.912 134.475 389.349 177.913 389.412 231.515 389.412 236.39 393.364 240.343 398.24 240.343 403.115 240.343 407.068 236.391 407.068 231.515 406.995 168.166 355.659 116.829 292.309 116.756 287.434 116.756 283.481 120.708 283.481 125.584 283.481 130.46 287.433 134.412 292.309 134.412 Z' fill='%23ffffff' fill-opacity='1' stroke='none'%3E%3C/path%3E%3Cpath d='M292.309 187.378 C316.674 187.407 336.418 207.151 336.447 231.516 336.447 236.391 340.399 240.344 345.275 240.344 350.15 240.344 354.103 236.392 354.103 231.516 354.064 197.405 326.421 169.762 292.31 169.723 287.435 169.723 283.482 173.675 283.482 178.551 283.481 183.426 287.433 187.378 292.309 187.378 Z' fill='%23ffffff' fill-opacity='1' stroke='none'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 25px;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24-icon-wa {
+  position: relative;
+  background: none !important;
+  background-color: rgb(1, 194, 74) !important;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24-icon-wa::after {
+  position: absolute;
+  content: 'Need Help? Chat with Us';
+  display: block;
+  position: absolute;
+  width: 156px;
+  right: 100%;
+  top: 98px;
+  background-color: rgb(245, 247, 249);
+  font-size: 12px;
+  font-family: Arial;
+  color: rgb(67, 71, 78);
+  padding: 7px;
+  margin-right: 7px;
+  letter-spacing: -0.03em;
+  border-radius: 4px;
+  transition: all 0.4s ease 0s;
+  box-sizing: border-box;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24-icon-wa::before {
+  content: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 24 24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m20.52 3.449c-2.28-2.204-5.28-3.449-8.475-3.449-9.17 0-14.928 9.935-10.349 17.838l-1.696 6.162 6.335-1.652c2.76 1.491 5.021 1.359 5.716 1.447 10.633 0 15.926-12.864 8.454-20.307z' fill='%23eceff1'%3E%3C/path%3E%3Cpath d='m12.067 21.751-.006-.001h-.016c-3.182 0-5.215-1.507-5.415-1.594l-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-8.793 10.745-13.19 16.963-6.975 6.203 6.15 1.848 16.875-7.026 16.875z' fill='rgb(1, 194, 74)' class='fill_color_hover' style=''%3E%3C/path%3E%3Cpath d='m17.507 14.307-.009.075c-.301-.15-1.767-.867-2.04-.966-.613-.227-.44-.036-1.617 1.312-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z' fill='%23fafafa'%3E%3C/path%3E%3C/svg%3E");
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24-icon-wa:hover {
+  transform: scale(1) !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: transform 0 ease-in !important;
+  transition: none !important;
+  background-color: rgb(8, 168, 74) !important;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24icon-call:hover {
+  transform: scale(1) !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: transform 0 ease-in !important;
+  transition: none !important;
+  background-color: rgb(8, 168, 74) !important;
+}
+
+#chat-24-desktop #chat-24-inner-container .chat-24icon-call {
+  margin-top: 20px !important;
+}
+
+/***** MOBILE ******/
+
+#chat-24-mobile #chat-24-inner-container {
+  background: none !important;
+}
+
+#chat-24-mobile #chat-24-close-icons {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+#chat-24-mobile #chat-24-footer {
+  display: none !important;
+}
+
+#chat-24-mobile #chat-24-close-icons::before {
+  display: none !important;
+}
+
+#chat-24-mobile #chat-24-close-icons::after {
+  display: none !important;
+}
+
+#chat-24-mobile {
+  width: 100% !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  height: 56px;
+}
+
+#chat-24-mobile #chat-24-content .chat-24-icon-container {
+  width: 50% !important;
+  float: right;
+  margin: 0px !important;
+  height: 56px !important;
+}
+
+#chat-24-widget-container #chat-24-mobile #chat-24-content,
+#chat-24-widget-container #chat-24-mobile #chat-24-inner-container {
+  padding: 0 !important;
+}
+
+#chat-24-mobile #chat-24-content .chat-24-icon-container .chat-24-icon-text {
+  display: none !important;
+}
+
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-call,
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-wa {
+  width: 100% !important;
+  height: 56px !important;
+  display: block !important;
+  text-decoration: none !important;
+  border-radius: 0 !important;
+  box-shadow: 0 !important;
+  transition-duration: .3s !important;
+  background: none !important;
+  position: relative;
+}
+
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-call {
+  background-color: rgb(4, 174, 228) !important;
+}
+
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-wa {
+  background-color: rgb(1, 194, 74) !important;
+}
+
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-wa::after,
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-call::after {
+  position: absolute;
+  color: #FFF;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%)translateX(15px);
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-size: 15px;
+}
+
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-call::after {
+  content: '';
+}
+
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-wa::after {
+  content: 'WhatsApp';
+  transform: translateY(-50%)translateX(20px);
+}
+
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-wa::before {
+  content: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 24 24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m20.52 3.449c-2.28-2.204-5.28-3.449-8.475-3.449-9.17 0-14.928 9.935-10.349 17.838l-1.696 6.162 6.335-1.652c2.76 1.491 5.021 1.359 5.716 1.447 10.633 0 15.926-12.864 8.454-20.307z' fill='%23eceff1'%3E%3C/path%3E%3Cpath d='m12.067 21.751-.006-.001h-.016c-3.182 0-5.215-1.507-5.415-1.594l-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-8.793 10.745-13.19 16.963-6.975 6.203 6.15 1.848 16.875-7.026 16.875z' fill='rgb(1, 194, 74)' class='fill_color_hover' style=''%3E%3C/path%3E%3Cpath d='m17.507 14.307-.009.075c-.301-.15-1.767-.867-2.04-.966-.613-.227-.44-.036-1.617 1.312-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z' fill='%23fafafa'%3E%3C/path%3E%3C/svg%3E");
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)translateX(-40px);
+  width: 25px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+#chat-24-mobile #chat-24-inner-container .chat-24-icon-call::before {
+  content: url("data:image/svg+xml,%3Csvg viewBox='0 0 516 516' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3Cg%3E%3Cpath d='M503.05 409.127 L446.289 371.283 395.83 337.65 C386.092 331.171 373.005 333.295 365.816 342.523 L334.593 382.662 C327.886 391.372 315.821 393.875 306.203 388.55 285.017 376.765 259.964 365.669 204.686 310.32 149.408 254.971 138.241 229.989 126.456 208.803 121.131 199.185 123.634 187.12 132.344 180.414 L172.483 149.191 C181.71 142.003 183.835 128.916 177.356 119.177 L144.756 70.272 105.879 11.956 C99.262 2.03 86.016 -0.95 75.786 5.185 L30.95 32.083 C18.833 39.222 9.926 50.75 6.074 64.277 -6.187 108.98 -8.659 207.593 149.381 365.633 307.421 523.673 406.025 521.193 450.728 508.931 464.255 505.08 475.783 496.173 482.922 484.055 L509.82 439.22 C515.956 428.989 512.976 415.744 503.05 409.127 Z' fill='%23ffffff' fill-opacity='1' stroke='none'%3E%3C/path%3E%3Cpath d='M292.309 81.447 C375.151 81.539 442.286 148.673 442.378 231.516 442.378 236.391 446.33 240.344 451.206 240.344 456.081 240.344 460.034 236.392 460.034 231.516 459.932 138.927 384.899 63.894 292.31 63.792 287.435 63.792 283.482 67.744 283.482 72.62 283.481 77.494 287.433 81.447 292.309 81.447 Z' fill='%23ffffff' fill-opacity='1' stroke='none'%3E%3C/path%3E%3Cpath d='M292.309 134.412 C345.912 134.475 389.349 177.913 389.412 231.515 389.412 236.39 393.364 240.343 398.24 240.343 403.115 240.343 407.068 236.391 407.068 231.515 406.995 168.166 355.659 116.829 292.309 116.756 287.434 116.756 283.481 120.708 283.481 125.584 283.481 130.46 287.433 134.412 292.309 134.412 Z' fill='%23ffffff' fill-opacity='1' stroke='none'%3E%3C/path%3E%3Cpath d='M292.309 187.378 C316.674 187.407 336.418 207.151 336.447 231.516 336.447 236.391 340.399 240.344 345.275 240.344 350.15 240.344 354.103 236.392 354.103 231.516 354.064 197.405 326.421 169.762 292.31 169.723 287.435 169.723 283.482 173.675 283.482 178.551 283.481 183.426 287.433 187.378 292.309 187.378 Z' fill='%23ffffff' fill-opacity='1' stroke='none'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)translateX(-67px);
+  width: 20px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+#chat-24-mobile.safari {
+  height: 56px !important;
+}
+
+#chat-24-mobile.safari #chat-24-content .chat-24-icon-container {
+  height: 56px !important;
+}
+
+#chat-24-mobile.safari #chat-24-inner-container .chat-24-icon-call,
+#chat-24-mobile.safari #chat-24-inner-container .chat-24-icon-wa {
+  height: 56px !important;
+}
+// Widget end ====================================
+
+body {
+  -webkit-font-smoothing: antialiased;
+
+  &.active {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: calc(100% - 40px);
+}
+
+.main {
+  overflow: hidden;
+  position: relative;
+}
+
+footer {
+  overflow: hidden;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+label {
+  will-change: transform;
+}
+
+// Invalid input start ==============
+.invalid-input {
+  border: 1px solid red !important;
+
+  &+.form-label {
+    left: 15px;
+  }
+}
+
+.invalid-input-non-animation {
+  border: 1px solid red;
+}
+// Invalid input end ==============
+
+.form-label-valid {
+  transform: translateY(-100%) scale(0.7);
+}
+
+
+
+// Fancybox start ==================
+.fancybox__container {
+  z-index: 10000;
+}
+
+.fancybox__thumbs,
+.fancybox__toolbar__items--left,
+.fancybox__button--slideshow,
+.fancybox__button--fullscreen,
+.fancybox__button--thumbs {
+  display: none;
+}
+
+.fancybox__backdrop {
+  background: #000;
+}
+
+.fancybox__toolbar {
+  background: none;
+}
+
+.carousel__button svg,
+.carousel__button svg path {
+  stroke: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+// Fancybox end ==================
+
+
+
+// Form sending animation start ==================
+form.sending {
+  pointer-events: none;
+
+  button {
+    position: relative;
+    pointer-events: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to left, #1a1a1a, #fff);
+      animation: waitFormSending 0.5s linear infinite alternate;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to right, #1a1a1a, #fff);
+      animation: waitFormSending 0.5s linear infinite alternate;
+    }
+  }
+}
+
+@keyframes waitFormSending {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+// Form sending animation end ==================
+
+
+
+// Form succsess start ==================
+.form__succsess {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: none;
+  z-index: 1000;
+}
+
+.form__succsess-inner {
+  position: relative;
+  width: 290px;
+  background-color: #fff;
+  padding: 20px 30px;
+  height: 160px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form__succsess-close {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    width: 15px;
+    height: 1px;
+    background-color: #000;
+  }
+
+  &:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.form__succsess-text {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Lora';
+  font-weight: 400;
+  color: #000;
+}
+// Form succsess end =================

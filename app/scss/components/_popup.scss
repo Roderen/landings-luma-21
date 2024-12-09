@@ -1,0 +1,144 @@
+.popup {
+  height: calc(100vh - 140px);
+  width: 100%;
+  overflow-y: auto;
+  padding: 70px 0;
+  background-color: rgba(0, 0, 0, .6);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+
+    @media screen and (max-height: 600px) {
+      display: block!important;
+    }
+  }
+
+  &-close {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+
+    @include mediaMax(768px) {
+      right: 15px;
+      top: 15px;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      width: 35px;
+      height: 2px;
+      background-color: #fff;
+    }
+
+    &:before {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__inner {
+    padding: 40px 45px;
+    max-width: 470px;
+    width: calc(100% - 90px);
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include NotoSerifSans(36px, 400, 1.23);
+    color: $black-gray;
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+    @include NotoSerifSans(16px, 300, 1.55);
+    color: $black-gray;
+  }
+
+  &__form {
+    margin-top: 30px;
+  }
+
+  &__form-container {
+    position: relative;
+    margin-bottom: 30px;
+
+    input {
+      @include NotoSerifSans(16px, 400, inherit);
+      color: rgb(99, 99, 99);
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $black-gray;
+      background-color: transparent;
+      padding: 20px 20px 10px 20px;
+      width: calc(100% - 42px);
+    }
+
+    label {
+      @include NotoSerifSans(16px, 400, inherit);
+      color: #636363;
+      opacity: .5;
+      position: absolute;
+      top: 18px;
+      left: 0;
+      transition: 0.3s;
+      pointer-events: none;
+      transform-origin: left;
+    }
+  }
+
+  &__form-button {
+    @include NotoSerifSans(16px, 400, inherit);
+    cursor: pointer;
+    color: #fff;
+    background-color: $orange;
+    text-transform: uppercase;
+    padding: 18px 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+
+  &__thanks {
+    display: none;
+    margin-top: 30px;
+    width: calc(100% - 40px);
+    padding: 24px 20px;
+    background-color: #289328;
+    color: #fff;
+    text-align: center;
+    @include NotoSerifSans(24px, 400, 28px);
+  }
+
+  &__free {
+    margin-top: 20px;
+    @include CairoSans(15px, 300, 1.55);
+    color: #000;
+  }
+}

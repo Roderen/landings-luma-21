@@ -1,0 +1,123 @@
+footer {
+  background-color: $light-pink;
+  padding: 40px 0 80px;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer__img {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  width: 310px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.footer__title {
+  @include NotoSerifSans(60px, 400, 66px);
+  color: $black-gray;
+  text-transform: uppercase;
+  font-style: italic;
+  max-width: 500px;
+  
+  span {
+    color: $orange;
+  }
+}
+
+.footer__info {
+  max-width: 600px;
+  width: 100%;
+}
+
+.footer__form {
+
+}
+
+.footer__form-container {
+  position: relative;
+  margin-bottom: 30px;
+
+  input {
+    @include NotoSerifSans(16px, 400, inherit);
+    color: rgb(99, 99, 99);
+    outline: none;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $black-gray;
+    background-color: transparent;
+    padding: 20px 20px 10px 20px;
+    width: calc(100% - 42px);
+
+    &:valid~.footer__form-label,
+    &:focus~.footer__form-label {
+      transform: translateY(-100%) scale(0.7);
+    }
+  }
+
+  label {
+    @include NotoSerifSans(16px, 400, inherit);
+    color: #636363;
+    opacity: .5;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    transform-origin: left;
+  }
+}
+
+.footer__form-button {
+  @include CairoSans(18px, 400, inherit);
+  cursor: pointer;
+  color: #fff;
+  background-color: $orange;
+  text-transform: uppercase;
+  padding: 18px 10px;
+  width: 300px;
+  outline: none;
+  border: none;
+}
+
+.footer__info-logo {
+  margin-top: 40px;
+  width: 245px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer__info-name {
+  margin-top: 40px;
+  width: 200px;
+  @include NotoSerifSans(28px, 400, 38px);
+  color: #080300;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.footer__info-position {
+  width: 230px;
+  margin-top: 10px;
+  @include CairoSans(14px, 300, 19px);
+  color: #bb9d79;
+}
+
+.footer__info-phone {
+  margin-top: 20px;
+}
+
+.footer__info-location {
+  margin-top: 15px;
+  width: 250px;
+  @include CairoSans(18px, 300, 24px);
+  color: $black-gray;
+}

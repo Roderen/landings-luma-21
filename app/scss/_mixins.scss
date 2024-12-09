@@ -1,0 +1,31 @@
+$black-gray: #2d2d2d;
+$gray: #8a8a8a;
+$yellow: #f8c300;
+$orange: #bc6741;
+$light-pink: #fff7f3;
+
+@mixin CairoSans($size,$w,$lh) {
+  font-family: 'Cairo', sans-serif;
+  font-size: $size;
+  font-weight: $w;
+  line-height: $lh;
+}
+
+@mixin NotoSerifSans($size,$w,$lh) {
+  font-family: 'Noto Serif Display', serif;
+  font-size: $size;
+  font-weight: $w;
+  line-height: $lh;
+}
+
+@mixin mediaMax($w) {
+  @media screen and (max-width: $w) {
+    @content;
+  }
+}
+
+@mixin mediaMin($w) {
+  @media screen and (min-width: $w) {
+    @content;
+  }
+}

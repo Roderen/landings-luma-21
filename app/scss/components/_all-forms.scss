@@ -1,0 +1,16 @@
+.form-container {
+  position: relative;
+}
+
+.form-input {
+
+  &:focus~.form-label,
+  &:valid~.form-label,
+  &.input-valid~.form-label {
+    transform: translateY(-100%) scale(0.7);
+  }
+}
+
+.footer__form-button {
+  cursor: pointer;
+}

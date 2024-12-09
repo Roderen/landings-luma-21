@@ -1,0 +1,146 @@
+html[lang="ar"] {
+  * {
+    font-family: 'Cairo';
+  }
+
+  .footer__form-label {
+    left: inherit;
+    right: 0;
+    transform-origin: right;
+  }
+
+  .popup__form-label {
+    left: inherit;
+    right: 0;
+    transform-origin: right;
+  }
+
+  .invalid-input+.form-label {
+    right: 15px;
+  }
+  
+  .intro__title {
+    font-style: normal;
+  }
+
+  .intro__price-aed {
+    flex-direction: column;
+
+    span {
+      font-style: normal;
+
+      &:first-child {
+        margin-right: auto;
+      }
+
+      &:last-child {
+        line-height: 40px;
+      }
+    }
+  }
+
+  .intro__price-usd {
+    margin-top: 15px;
+  }
+
+  .intro__price-label {
+    min-width: 130px;
+  }
+  
+  .about__title {
+    font-style: normal;
+  }
+
+  .about__top {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+
+  .about__img:before {
+    left: inherit;
+    right: -120px;
+  }
+
+  .section-about-triangle {
+    transform: scale(-1, 1);
+  }
+
+  .gallery__bottom-img {
+    transform: scale(-1, 1);
+    right: inherit;
+    left: -100px;
+  }
+  
+  .location__title {
+    font-style: normal;
+  }
+  
+  .appeal__title {
+    font-style: normal;
+  }
+
+  .appeal__left:before {
+    left: inherit;
+    right: -140px;
+  }
+  
+  .footer__title {
+    font-style: normal;
+  }
+
+  .footer__img {
+    right: inherit;
+    left: 0;
+  }
+
+
+
+  @include mediaMax(1024px) {
+    .footer__img {
+      left: -100px;
+    }
+  }
+
+  @include mediaMax(800px) {
+    .about__top {
+      margin-right: 0;
+    }
+
+    .intro__descr {
+      max-width: 250px;
+    }
+
+    .gallery__bottom-img {
+      margin-left: -20px;
+      margin-right: auto;
+    }
+
+    .footer__img {
+      left: -50px;
+    }
+  }
+
+  @include mediaMax(630px) {
+    .gallery__bottom-img {
+      margin-right: 0;
+    }
+  }
+
+  @include mediaMax(480px) {
+    .footer__img {
+      left: -100px;
+    }
+  }
+
+  @include mediaMax(414px) {
+    .footer__img {
+      left: -90px;
+    }
+  }
+
+  @include mediaMax(360px) {
+    .intro__price-aed span:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+}
